@@ -14,15 +14,16 @@
         <link rel="stylesheet" href="css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
-    <body class="h-screen bg-[url('img/city.jpg')] grid md:block">
-        <div class="grid">
+    <body class="h-screen bg-[url('img/city.jpg')] overflow-hidden grid md:block">
+        <div class="container grid ">
             <!-- hero-section	 -->
             <header
-                class="w-full h-full text-white hero-section md:text-dark md:grid-cols-2 grid md:grid-flow-col"
+                class="w-full  text-white hero-section md:text-dark md:grid-cols-2 grid md:grid-flow-col"
             >
                 <!-- hero-body	 -->
                 <div
-                    class="hero-body container grid grid-rows-3 h-full p-8 md:col-auto bg-[hsl(0,0%,0%,0.222222)] md:bg-transparent"
+                    class="hero-body h-full container grid  p-8 pb-16 scale-125 duration-500 delay-500 opacity-0 md:col-auto bg-[hsl(0,0%,0%,0.222222)] md:bg-transparent"
+                    id="hero-text"
                 >
                     <div class="logo borde-2 borde-red-500">
                         <img
@@ -47,17 +48,17 @@
                     </div>
                     <div class="cta relative borde-2 borde-red-500">
                         <div
-                            class="group duration-150 hover:bg-coyoteBrown get-started  w-[240px] bg-lightWheat flex mt-4 md:mt-16"
+                            class="group duration-150 hover:bg-coyoteBrown get-started w-[240px] bg-lightWheat flex mt-4 md:mt-16"
                         >
                             <p
-                                class="py-3 pl-6 flex-[5] duration-150 text-coyoteBrown font-latobd group-hover:text-lightWheat "
+                                class="py-3 pl-6 flex-[5] duration-150 text-coyoteBrown font-latobd group-hover:text-white"
                             >
                                 Make A Reservation
                             </p>
                             <button
-                                class="flex-1 ml-1 px-2 duration-150 bg-lightBiege hover:bg-coyoteBrown group-hover:text-lightWheat "
+                                class="flex-1 ml-1 px-2 duration-150 bg-lightBiege hover:bg-coyoteBrown group-hover:text-lightWheat"
                             >
-                                <i class="fa fa-arrow-right text-white"></i>
+                                <i class="fa fa-arrow-right group-hover:animate-spin   text-white "></i>
                             </button>
                         </div>
                     </div>
@@ -65,7 +66,7 @@
                 <!-- hero-image	 -->
                 <picture class="relative overflow-hidden z-[-1] md:col-auto">
                     <img
-                        class="object-cover scale-125 duration-500 delay-500 opacity-0 object-center h-full"
+                        class="object-cover h-full w-full scale-125 duration-500 delay-50 opacity-0 object-center "
                         src="img/city.jpg"
                         id="hero-img"
                         alt="city from sky view"
@@ -74,13 +75,15 @@
             </header>
         </div>
         <script>
-        	const heroImg  = document.getElementById('hero-img')
-        	
-        	function showHeroImg(){
-        		heroImg.classList.remove('opacity-0', 'scale-125')
-        	}
-        	
-        	window.addEventListener('load', showHeroImg)
+            const heroText = document.getElementById("hero-text");
+            const heroImg = document.getElementById("hero-img");
+
+            function showHeroImg() {
+                heroText.classList.remove("opacity-0", "scale-125");
+                heroImg.classList.remove("opacity-0", "scale-125");
+            }
+
+            window.addEventListener("load", showHeroImg);
         </script>
     </body>
 </html>

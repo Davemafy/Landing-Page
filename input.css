@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+ *{
+	box-sizing: border-box;
+}
+
 .hero-section {
 	grid-template-areas: 'stack' ;
 	isolation: isolate;
@@ -10,11 +14,8 @@
 .hero-section > *{
 	grid-area: stack;
 }
-
-
-.hero-section .hero-body {
-	position: relative;
-	z-index: 2;
+.hero-section  *{
+	/*border: red solid;*/
 }
 
 @font-face{
