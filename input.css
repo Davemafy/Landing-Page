@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-section {
+	grid-template-areas: 'stack' ;
+	isolation: isolate;
+}
+
+.hero-section > *{
+	grid-area: stack;
+}
+
+
+.hero-section .hero-body {
+	position: relative;
+	z-index: 2;
+}
+
+@font-face{
+	font-family: "Lato";
+	src: url('../fonts/lato.ttf');
+}
+
+@font-face{
+	font-family: "LatoReg";
+	src: url('../fonts/latoreg.ttf');
+}
+
+@font-face{
+	font-family: "LatoBold";
+	src: url('../fonts/latobold.ttf');
+}
+
+

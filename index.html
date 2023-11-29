@@ -1,1 +1,86 @@
-
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#F59555" />
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#F59555" />
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#F59555" />
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="h-screen bg-[url('img/city.jpg')] grid md:block">
+        <div class="grid">
+            <!-- hero-section	 -->
+            <header
+                class="w-full h-full text-white hero-section md:text-dark md:grid-cols-2 grid md:grid-flow-col"
+            >
+                <!-- hero-body	 -->
+                <div
+                    class="hero-body container grid grid-rows-3 h-full p-8 md:col-auto bg-[hsl(0,0%,0%,0.222222)] md:bg-transparent"
+                >
+                    <div class="logo borde-2 borde-red-500">
+                        <img
+                            src="img/logo.svg"
+                            height="100"
+                            width="100"
+                            class="h-10 w-10 invert-[95%] md:invert-0"
+                            alt=""
+                        />
+                    </div>
+                    <div class="header-text borde-2 borde-red-500">
+                        <h1
+                            class="text-6xl font-medium mb-4 font-latoreg md:drop-shadow-none"
+                        >
+                            Oasis Sky Lounge
+                        </h1>
+                        <p
+                            class="text-2xl font-lato font-extralight md:text-lightDark drop-shadow-xl md:drop-shadow-none"
+                        >
+                            Torontos most luxurious rooftop lounge
+                        </p>
+                    </div>
+                    <div class="cta relative borde-2 borde-red-500">
+                        <div
+                            class="group duration-150 hover:bg-coyoteBrown get-started  w-[240px] bg-lightWheat flex mt-4 md:mt-16"
+                        >
+                            <p
+                                class="py-3 pl-6 flex-[5] duration-150 text-coyoteBrown font-latobd group-hover:text-lightWheat "
+                            >
+                                Make A Reservation
+                            </p>
+                            <button
+                                class="flex-1 ml-1 px-2 duration-150 bg-lightBiege hover:bg-coyoteBrown group-hover:text-lightWheat "
+                            >
+                                <i class="fa fa-arrow-right text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- hero-image	 -->
+                <picture class="relative overflow-hidden z-[-1] md:col-auto">
+                    <img
+                        class="object-cover scale-125 duration-500 delay-500 opacity-0 object-center h-full"
+                        src="img/city.jpg"
+                        id="hero-img"
+                        alt="city from sky view"
+                    />
+                </picture>
+            </header>
+        </div>
+        <script>
+        	const heroImg  = document.getElementById('hero-img')
+        	
+        	function showHeroImg(){
+        		heroImg.classList.remove('opacity-0', 'scale-125')
+        	}
+        	
+        	window.addEventListener('load', showHeroImg)
+        </script>
+    </body>
+</html>
