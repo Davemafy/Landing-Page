@@ -2,22 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
- *{
-	box-sizing: border-box;
-}
-
-.hero-section {
-	grid-template-areas: 'stack' ;
-	isolation: isolate;
-}
-
-.hero-section > *{
-	grid-area: stack;
-}
-.hero-section  *{
-	/*border: red solid;*/
-}
-
 @font-face{
 	font-family: "Lato";
 	src: url('../fonts/lato.ttf');
@@ -33,4 +17,14 @@
 	src: url('../fonts/latobold.ttf');
 }
 
+.hero-section {
+	grid-template-areas: 'stack' ;
+	isolation: isolate;
+}
 
+.hero-section > *{
+	grid-area: stack;
+}
+.hero-section  *{
+	border: limegreen solid;
+}

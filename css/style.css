@@ -566,24 +566,16 @@ video {
   height: 2.5rem;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .h-full {
   height: 100%;
 }
 
-.h-\[100dvh\] {
-  height: 100dvh;
-}
-
-.min-h-\[100vmax\] {
-  min-height: 100vmax;
-}
-
-.min-h-\[100\] {
-  min-height: 100;
-}
-
-.min-h-\[100dvh\] {
-  min-height: 100dvh;
+.h-2\/3 {
+  height: 66.666667%;
 }
 
 .w-10 {
@@ -616,12 +608,12 @@ video {
   overflow: hidden;
 }
 
-.border {
-  border-width: 1px;
+.overflow-scroll {
+  overflow: scroll;
 }
 
-.border-2 {
-  border-width: 2px;
+.border {
+  border-width: 1px;
 }
 
 .border-black {
@@ -641,6 +633,34 @@ video {
 .bg-lightWheat {
   --tw-bg-opacity: 1;
   background-color: hsl(35 65% 81% / var(--tw-bg-opacity));
+}
+
+.bg-\[hsl\(0\2c 0\%\2c 0\%\2c 0\.62\)\] {
+  background-color: hsl(0,0%,0%,0.62);
+}
+
+.bg-\[hsl\(0\2c 0\%\2c 0\%\2c 0\.82\)\] {
+  background-color: hsl(0,0%,0%,0.82);
+}
+
+.bg-\[hsl\(0\2c 0\%\2c 100\%\2c 0\.82\)\] {
+  background-color: hsl(0,0%,100%,0.82);
+}
+
+.bg-\[hsl\(0\2c 0\%\2c 100\%\2c 0\.92\)\] {
+  background-color: hsl(0,0%,100%,0.92);
+}
+
+.bg-\[hsl\(0\2c 0\%\2c 100\%\2c 0\.99\)\] {
+  background-color: hsl(0,0%,100%,0.99);
+}
+
+.bg-\[hsl\(0\2c 0\%\2c 1\%\2c 0\.99\)\] {
+  background-color: hsl(0,0%,1%,0.99);
+}
+
+.bg-\[hsl\(0\2c 0\%\2c 10\%\2c 0\.99\)\] {
+  background-color: hsl(0,0%,10%,0.99);
 }
 
 .object-cover {
@@ -719,10 +739,6 @@ video {
   opacity: 0;
 }
 
-.outline-2 {
-  outline-width: 2px;
-}
-
 .drop-shadow-xl {
   --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -745,23 +761,6 @@ video {
   transition-duration: 500ms;
 }
 
-*{
-  box-sizing: border-box;
-}
-
-.hero-section {
-  grid-template-areas: 'stack' ;
-  isolation: isolate;
-}
-
-.hero-section > *{
-  grid-area: stack;
-}
-
-.hero-section  *{
-  /*border: red solid;*/
-}
-
 @font-face{
   font-family: "Lato";
 
@@ -778,6 +777,19 @@ video {
   font-family: "LatoBold";
 
   src: url('../fonts/latobold.ttf');
+}
+
+.hero-section {
+  grid-template-areas: 'stack' ;
+  isolation: isolate;
+}
+
+.hero-section > *{
+  grid-area: stack;
+}
+
+.hero-section  *{
+  border: limegreen solid;
 }
 
 .hover\:bg-coyoteBrown:hover {
@@ -846,5 +858,3 @@ video {
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
 }
-
-
