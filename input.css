@@ -25,6 +25,7 @@
 .hero-section > *{
 	grid-area: stack;
 }
-.hero-section  *{
-	border: limegreen solid;
+body .hero-section  *:hover{
+	outline: limegreen solid;
+	transition: 150ms;
 }
