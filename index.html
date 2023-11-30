@@ -14,17 +14,18 @@
         <link rel="stylesheet" href="css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
-    <body class="h-screen bg-[url('img/city.jpg')] overflow-hidden grid md:block">
-        <div class="container grid ">
+    <body class="">
+        <div class=" ">
             <!-- hero-section	 -->
             <header
-                class="w-full  text-white hero-section md:text-dark md:grid-cols-2 grid md:grid-flow-col"
+                class="hero-section w-full border border-black w-full text-white grid md:text-dark md:grid-cols-2 md:grid-flow-col"
             >
                 <!-- hero-body	 -->
                 <div
-                    class="hero-body h-full container grid  p-8 pb-16 scale-125 duration-500 delay-500 opacity-0 md:col-auto bg-[hsl(0,0%,0%,0.222222)] md:bg-transparent"
+                    class="hero-body min-h-[100vmax] bg-[hsl(0,0%,0%,0.22)] p-8 pb-16 scale-125 duration-500 delay-500 opacity-0 md:col-auto md:bg-transparent"
                     id="hero-text"
                 >
+                <!-- hero-logo	 -->
                     <div class="logo borde-2 borde-red-500">
                         <img
                             src="img/logo.svg"
@@ -34,18 +35,23 @@
                             alt=""
                         />
                     </div>
+                <!-- hero-body-text	 -->
                     <div class="header-text borde-2 borde-red-500">
+                <!-- hero-body-title	 -->
                         <h1
                             class="text-6xl font-medium mb-4 font-latoreg md:drop-shadow-none"
                         >
                             Oasis Sky Lounge
                         </h1>
+                <!-- hero-body-pargraph	 -->
                         <p
                             class="text-2xl font-lato font-extralight md:text-lightDark drop-shadow-xl md:drop-shadow-none"
                         >
                             Torontos most luxurious rooftop lounge
                         </p>
+                <!-- Call To Action Container	 -->
                     </div>
+                <!-- Call To Action Button	 -->
                     <div class="cta relative borde-2 borde-red-500">
                         <div
                             class="group duration-150 hover:bg-coyoteBrown get-started w-[240px] bg-lightWheat flex mt-4 md:mt-16"
@@ -58,7 +64,9 @@
                             <button
                                 class="flex-1 ml-1 px-2 duration-150 bg-lightBiege hover:bg-coyoteBrown group-hover:text-lightWheat"
                             >
-                                <i class="fa fa-arrow-right group-hover:animate-spin   text-white "></i>
+                                <i
+                                    class="fa fa-arrow-right group-hover:animate-spin text-white"
+                                ></i>
                             </button>
                         </div>
                     </div>
@@ -66,7 +74,7 @@
                 <!-- hero-image	 -->
                 <picture class="relative overflow-hidden z-[-1] md:col-auto">
                     <img
-                        class="object-cover h-full w-full scale-125 duration-500 delay-50 opacity-0 object-center "
+                        class="object-cover h-full w-full scale-125 duration-500 delay-50 opacity-0 object-center"
                         src="img/city.jpg"
                         id="hero-img"
                         alt="city from sky view"

@@ -602,6 +602,30 @@ video {
   height: 100vh;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.min-h-\[\] {
+  min-height: ;
+}
+
+.min-h-\[100vmin\] {
+  min-height: 100vmin;
+}
+
+.min-h-\[100vman\] {
+  min-height: 100vman;
+}
+
+.min-h-\[100vmaz\] {
+  min-height: 100vmaz;
+}
+
+.min-h-\[100vmax\] {
+  min-height: 100vmax;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -636,13 +660,9 @@ video {
   border-width: 1px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
-.border-red-500 {
+.border-black {
   --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-\[hsl\(0\2c 0\%\2c 0\%\2c 0\.222222\)\] {
@@ -659,13 +679,16 @@ video {
   background-color: hsl(35 65% 81% / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'img\/city\.jpg\'\)\] {
-  background-image: url('img/city.jpg');
+.bg-\[hsl\(0\2c 0\%\2c 0\%\2c 0\.2\)\] {
+  background-color: hsl(0,0%,0%,0.2);
 }
 
-.via-zinc-400 {
-  --tw-gradient-to: rgb(161 161 170 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #a1a1aa var(--tw-gradient-via-position), var(--tw-gradient-to);
+.bg-\[hsl\(0\2c 0\%\2c 0\%\2c 0\.22\)\] {
+  background-color: hsl(0,0%,0%,0.22);
+}
+
+.bg-\[url\(\'img\/city\.jpg\'\)\] {
+  background-image: url('img/city.jpg');
 }
 
 .object-cover {
@@ -804,43 +827,6 @@ video {
 .hover\:bg-coyoteBrown:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(37 38% 34% / var(--tw-bg-opacity));
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.group:hover .group-hover\:animate-bounce {
-  animation: bounce 1s infinite;
-}
-
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.group:hover .group-hover\:animate-ping {
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
-@keyframes pulse {
-  50% {
-    opacity: .5;
-  }
-}
-
-.group:hover .group-hover\:animate-pulse {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 @keyframes spin {
