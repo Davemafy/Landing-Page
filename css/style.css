@@ -669,11 +669,6 @@ video {
   background-color: hsl(35 65% 81% / var(--tw-bg-opacity));
 }
 
-.bg-neutral-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -781,7 +776,7 @@ video {
 @font-face{
   font-family: "LatoReg";
 
-  src: url('../fonts/latoreg.ttf');
+  src: url('../fonts/caros.otf');
 }
 
 @font-face{
@@ -845,56 +840,33 @@ body .text-container:has(*:hover)  .text-container *:not(*:hover){
   }
 }
 
-@media (min-width: 768px) {
-  .md\:col-auto {
+@media (min-width: 978px) {
+  .lg\:col-auto {
     grid-column: auto;
   }
 
-  .md\:block {
+  .lg\:block {
     display: block;
   }
 
-  .md\:grid-flow-col {
+  .lg\:grid-flow-col {
     grid-auto-flow: column;
   }
 
-  .md\:grid-cols-2 {
+  .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:bg-transparent {
-    background-color: transparent;
+  .lg\:justify-items-start {
+    justify-items: start;
   }
 
-  .md\:bg-white {
-    --tw-bg-opacity: 1;
-    background-color: rgb(245 245 245 / var(--tw-bg-opacity));
-  }
-
-  .md\:text-dark {
-    --tw-text-opacity: 1;
-    color: hsl(213 11% 20% / var(--tw-text-opacity));
-  }
-
-  .md\:text-lightDark {
-    --tw-text-opacity: 1;
-    color: hsl(218 8% 27% / var(--tw-text-opacity));
-  }
-
-  .md\:drop-shadow-none {
-    --tw-drop-shadow: drop-shadow(0 0 #0000);
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-  }
-
-  .md\:invert-0 {
-    --tw-invert: invert(0);
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-  }
-}
-
-@media (min-width: 978px) {
   .lg\:gap-32 {
     gap: 8rem;
+  }
+
+  .lg\:bg-transparent {
+    background-color: transparent;
   }
 
   .lg\:text-2xl {
@@ -905,6 +877,26 @@ body .text-container:has(*:hover)  .text-container *:not(*:hover){
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .lg\:text-dark {
+    --tw-text-opacity: 1;
+    color: hsl(213 11% 20% / var(--tw-text-opacity));
+  }
+
+  .lg\:text-lightDark {
+    --tw-text-opacity: 1;
+    color: hsl(218 8% 27% / var(--tw-text-opacity));
+  }
+
+  .lg\:drop-shadow-none {
+    --tw-drop-shadow: drop-shadow(0 0 #0000);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+
+  .lg\:invert-0 {
+    --tw-invert: invert(0);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
 }
 
