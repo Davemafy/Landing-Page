@@ -22,57 +22,63 @@
             >
                 <!-- hero-body	 -->
                 <div
-                    class="hero-body bg-[hsl(0,0%,10%,0.89)] flex flex-col  justify-stretch gap-16 md:gap-20  p-8 content-start scale-100 duration-500 delay-500 opacity-1 md:col-auto md:bg-transparent"
+                    class="hero-body bg-[hsl(0,0%,10%,0.89)] flex flex-col items-center justify-center  p-12 scale-100 duration-500 delay-500 opacity-1 md:col-auto md:bg-transparent"
                     id="hero-text"
                 >
-                    <!-- hero-logo	 -->
-                    <div class="logo borde-2 borde-red-500">
-                        <img
-                            src="img/logo.svg"
-                            height="100"
-                            width="100"
-                            class="h-10 w-10 invert-[95%] md:invert-0"
-                            alt=""
-                        />
-                    </div>
-                    <!-- hero-body-text	 -->
-                    <div class="header-text flex flex-col flex-1 gap-7 justify-end borde-2 borde-red-500">
-                        <!-- hero-body-title	 -->
-                        <h1
-                            class="text-4xl font-medium font-latoreg md:drop-shadow-none"
-                        >
-                            Oasis Sky Lounge
-                        </h1>
-                        <!-- hero-body-pargraph	 -->
-                        <p
-                            class="text-2xl font-lato font-extralight md:text-lightDark drop-shadow-xl md:drop-shadow-none"
-                        >
-                            Torontos most luxurious rooftop lounge
-                        </p>
-                        <!-- Call To Action Container	 -->
-                    </div>
-                    <!-- Call To Action Button	 -->
-                    <div class="cta relative borde-2 flex-1 borde-red-500">
+                    <div class="flex flex-col gap-16 sm:gap-[max(100%,10rem)]  lg:gap-32 xl:gap-48  text-container">
+                        <!-- hero-logo	 -->
                         <div
-                            class="group duration-150 hover:bg-coyoteBrown get-started w-[240px] bg-lightWheat flex "
+                            class="logo self-start top-16 borde-2 borde-red-500 md:block"
                         >
+                            <img
+                                src="img/logo.svg"
+                                height="100"
+                                width="100"
+                                class="h-10 w-10 invert-[95%] md:invert-0"
+                                alt=""
+                            />
+                        </div>
+                        <!-- hero-body-text	 -->
+                        <div
+                            class="header-text flex flex-col gap-7 justify-end borde-2 borde-red-500"
+                        >
+                            <!-- hero-body-title	 -->
+                            <h1
+                                class="text-4xl max-w-[49ch] lg:text-5xl font-medium font-latoreg md:drop-shadow-none"
+                            >
+                                Oasis Sky Lounge
+                            </h1>
+                            <!-- hero-body-pargraph	 -->
                             <p
-                                class="py-3 pl-6 flex-[5] duration-150 text-coyoteBrown font-latobd group-hover:text-white"
+                                class="text-xl max-w-[20ch] lg:text-2xl font-lato font-extralight md:text-lightDark drop-shadow-xl md:drop-shadow-none"
                             >
-                                Make A Reservation
+                                Torontos most luxurious rooftop lounge
                             </p>
-                            <button
-                                class="flex-1 ml-1 px-2 duration-150 bg-lightBiege hover:bg-coyoteBrown group-hover:text-lightWheat"
+                            <!-- Call To Action Container	 -->
+                        </div>
+                        <!-- Call To Action Button	 -->
+                        <div class="cta relative borde-2 borde-red-500">
+                            <div
+                                class="group duration-150 hover:bg-coyoteBrown get-started w-[240px] bg-lightWheat flex"
                             >
-                                <i
-                                    class="fa fa-arrow-right group-hover:animate-spin text-white"
-                                ></i>
-                            </button>
+                                <p
+                                    class="py-3 pl-6  flex-[5] duration-150 text-coyoteBrown font-latobd group-hover:text-white"
+                                >
+                                    Make A Reservation
+                                </p>
+                                <button
+                                    class="flex-1 ml-1 px-2 duration-150 bg-lightBiege hover:bg-coyoteBrown group-hover:text-lightWheat"
+                                >
+                                    <i
+                                        class="fa fa-arrow-right group-hover:animate-spin text-white"
+                                    ></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- hero-image	 -->
-                <picture class="relative  overflow-hidden z-[-1] md:col-auto">
+                <picture class="relative overflow-hidden z-[-1] md:col-auto">
                     <img
                         class="object-cover h-full w-full scale-125 duration-300 opacity-0 object-center"
                         src="img/city.jpg"
