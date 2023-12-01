@@ -22,6 +22,7 @@
 	isolation: isolate;
 }
 
+
 .hero-section > *{
 	grid-area: stack;
 }
@@ -29,8 +30,10 @@ body .text-container  *{
 	outline: lie solid;
 	transition: 150ms;
 }
+
+
 body .hero-section  *:hover{
-	outline: red solid;
+	/*outline: red solid;*/
 	transition: 150ms;
 }
 body .text-container:has(*:hover)  .text-container *:not(*:hover){
