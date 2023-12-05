@@ -1,103 +1,95 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <!-- Chrome, Firefox OS and Opera -->
-        <meta name="theme-color" content="#F59555" />
-        <!-- Windows Phone -->
-        <meta name="msapplication-navbutton-color" content="#F59555" />
-        <!-- iOS Safari -->
-        <meta name="apple-mobile-web-app-status-bar-style" content="#F59555" />
-        <title>Oasis Sky Lounge | Book A Spot </title>
-        <link rel="stylesheet" href="css/font-awesome.min.css" />
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
-    <body class="">
-        <div class="overflow-hidden">
-            <!-- hero-section	 -->
-            <header
-                class="hero-section overflow-scroll h-[100vh] w-full text-white grid lg:text-dark lg:grid-cols-2 lg:grid-flow-col"
-            >
-                <!-- hero-body	 -->
-                <div
-                    class="hero-body bg-[hsl(0,0%,10%,0.89)] flex flex-col items-center justify-center lg:justify-items-start p-12 scale-100 duration-500 delay-500 opacity-1 lg:col-auto lg:bg-transparent"
-                    id="hero-text"
-                >
-                    <div
-                        class="flex flex-col gap-16 sm:gap-[max(100%,10rem)] lg:gap-32 xl:gap-48 text-container"
-                    >
-                        <!-- hero-logo	 -->
-                        <div class="logo self-start top-16 lg:block">
-                            <img
-                                src="img/logo.png"
-                                height="100"
-                                width="100"
-                                class="h-10 w-10 lg:h-16 lg:w-16 invert-[95%] lg:invert-0"
-                                alt=""
-                            />
-                        </div>
-                        <!-- hero-body-text	 -->
-                        <div
-                            class="header-text flex flex-col gap-7 justify-end"
-                        >
-                            <!-- hero-body-title	 -->
-                            <h1
-                                class="text-4xl max-w-[49ch] lg:text-5xl font-medium font-latoreg lg:drop-shadow-none"
-                            >
-                                Oasis Sky Lounge
-                            </h1>
-                            <!-- hero-body-pargraph	 -->
-                            <p
-                                class="text-xl max-w-[20ch] lg:text-2xl font-lato font-extralight lg:text-lightDark drop-shadow-xl lg:drop-shadow-none"
-                            >
-                                Torontos most luxurious rooftop lounge
-                            </p>
-                            <!-- Call To Action Container	 -->
-                        </div>
-                        <!-- Call To Action Button	 -->
-                        <div class="cta relative">
-                            <a href="index.html"
-                                class="group duration-150 hover:bg-coyoteBrown uppercase get-started w-[240px] lg:w-[300px] bg-lightWheat flex"
-                            >
-                                <p
-                                    class="py-3 text-sm lg:text-lg pl-6 flex-[5] duration-150 text-coyoteBrown font-latobd group-hover:text-white"
-                                >
-                                    Back To Home
-                                </p>
-                                <button
-                                    class="flex-1 ml-1 px-2 duration-150 bg-lightBiege hover:bg-coyoteBrown group-hover:text-lightWheat"
-                                >
-                                    <i
-                                        class="fa fa-arrow-left group-hover:animate-spin text-white"
-                                    ></i>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- hero-image	 -->
-                <picture class="relative overflow-hidden z-[-1] lg:col-auto">
-                    <img
-                        class="object-cover h-full w-full scale-125 duration-300 opacity-0 object-center"
-                        src="img/city.jpg"
-                        id="hero-img"
-                        alt="city from sky view"
-                    />
-                </picture>
-            </header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#F59555" />
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#F59555" />
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#F59555" />
+  <title>Oasis Sky Lounge | Book A Spot</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="">
+  <div class="overflow-hidden">
+    <!-- hero-section	 -->
+    <header class="hero-section overflow-scroll h-[100vh] w-full text-white grid lg:text-dark lg:grid-cols-2 lg:grid-flow-col">
+      <!-- hero-body	 -->
+      <div class="hero-body bg-[hsl(0,0%,10%,0.89)] flex flex-col items-center justify-center lg:justify-items-start p-12 scale-100 duration-500 delay-500 opacity-1 lg:col-auto lg:bg-transparent" id="hero-text">
+        <div class="flex flex-col gap-16 sm:gap-[max(100%,10rem)] lg:gap-32 xl:gap-48 text-container">
+          <!-- hero-logo	 -->
+          <div class="logo self-start top-16 lg:block">
+            <img src="img/logo.png" height="100" width="100" class="h-10 w-10 lg:h-16 lg:w-16 invert-[95%] lg:invert-0" alt="" />
+          </div>
+          <!-- hero-body-text	 -->
+          <div class="header-text flex flex-col gap-7 justify-end">
+            <!-- hero-body-title	 -->
+            <h1 class="text-4xl max-w-[49ch] lg:text-5xl font-medium font-latoreg lg:drop-shadow-none">
+              Book A Spot
+            </h1>
+            <!-- hero-body-pargraph	 -->
+            <form class="flex flex-col lg:hidden gap-4 md:gap-2" action="">
+              <p class="text-xl max-w-[20ch] lg:text-2xl font-latoreg  lg:text-lightDark drop-shadow-xl lg:drop-shadow-none">
+                <label for="input">Full Name</label>
+                <input class="text-slate-100 focus:bg-lightDark text-lightDark focus:text-lightWheat  mt-2 p-1 pt-2 px-3   outline-none" required type="text" />
+              </p>
+              <p class="text-xl max-w-[20ch] lg:text-2xl font-latoreg font-extralight  lg:text-lightDark drop-shadow-xl lg:drop-shadow-none">
+                <label for="input" >Email</label>
+                <input required class="focus:bg-lightDark text-lightDark focus:text-lightWheat  mt-2 bg-neutral-200 p-1 pt-2 px-3 outline-none" type="text" />
+              </p>
+              <p class="text-xl max-w-[20ch] lg:text-2xl font-latoreg lg:text-lightDark drop-shadow-xl lg:drop-shadow-none">
+                <label for="input">Message</label>
+                <textarea class="focus:bg-lightDark text-lightDark focus:text-lightWheat  leading-0 font-reg  text-lg outline-none mt-2  p-2  py-3"></textarea>
+            <a href="index.html" class="group duration-150 focus:bg-coyoteBrown uppercase get-started w-[140px] lg:w-[300px] bg-lightWheat flex">
+   					  </p>				
+              <p class="py-3 text-sm lg:text-lg pl-6 flex-[5] duration-150 text-coyoteBrown font-latobd group-hover:text-white">
+                Submit
+              </p>
+              <button class="flex-1 ml-1 px-2 duration-150 bg-lightBiege hover:bg-coyoteBrown group-hover:text-lightWheat">
+                <i class="fa fa-arrow-right group-hover:animate-spin text-white"></i>
+              </button>
+            
+            </a>
+            </form>
+            <!-- Call To Action Container	 -->
+          </div>
+          <!-- Call To Action Button	 -->
+          <div class="cta hidden relative">
+            <a href="index.html" class="group duration-150 hover:bg-coyoteBrown uppercase get-started w-[140px] lg:w-[300px] bg-lightWheat flex">
+              <p class="py-3 text-sm lg:text-lg pl-6 flex-[5] duration-150 text-coyoteBrown font-latobd group-hover:text-white">
+                Submit
+              </p>
+              <button class="flex-1 ml-1 px-2 duration-150 bg-lightBiege hover:bg-coyoteBrown group-hover:text-lightWheat">
+                <i class="fa fa-arrow-right group-hover:animate-spin text-white"></i>
+              </button>
+            
+            </a>
+          </div>
         </div>
-        <script>
-            const heroText = document.getElementById("hero-text");
-            const heroImg = document.getElementById("hero-img");
+      </div>
+      <!-- hero-image	 -->
+      <picture class="relative overflow-hidden z-[-1] lg:col-auto">
+        <img class="object-cover h-full w-full duration-300 object-center" src="img/city.jpg" id="hero-img" alt="city from sky view" />
+      </picture>
+    </header>
+  </div>
+  <script>
+    const heroText = document.getElementById("hero-text");
+    const heroImg = document.getElementById("hero-img");
 
-            function showHeroImg() {
-                heroText.classList.remove("opacity-0", "scale-125");
-                heroImg.classList.remove("opacity-0", "scale-125");
-            }
+    function showHeroImg() {
+      heroText.classList.remove("opacity-0", "scale-125");
+      heroImg.classList.remove("opacity-0", "scale-125");
+    }
 
-            window.addEventListener("load", showHeroImg);
-        </script>
-    </body>
+    window.addEventListener("load", showHeroImg);
+  </script>
+</body>
+
 </html>
