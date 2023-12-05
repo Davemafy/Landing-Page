@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#F59555" />
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#F59555" />
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#F59555" />
+        <title>Oasis Sky Lounge | Home</title>
+        
+        
+      <link rel="stylesheet" href="/assets/index-c59a2cd6.css">
+    </head>
+    <body class="">
+        <div class="overflow-hidden">
+            <!-- hero-section	 -->
+            <header
+                class="hero-section overflow-scroll h-[100vh] w-full text-white grid lg:text-dark lg:grid-cols-2 lg:grid-flow-col"
+            >
+                <!-- hero-body	 -->
+                <div
+                    class="hero-body bg-[hsl(0,0%,10%,0.89)] flex flex-col items-center justify-center lg:justify-items-start p-12 scale-100 duration-500 delay-500 opacity-1 lg:col-auto lg:bg-transparent"
+                    id="hero-text"
+                >
+                    <div
+                        class="flex flex-col gap-16 sm:gap-[max(100%,10rem)] lg:gap-32 xl:gap-48 text-container"
+                    >
+                        <!-- hero-logo	 -->
+                        <div class="logo self-start top-16 lg:block">
+                            <img
+                                src="/assets/logo-c2c58d7e.png"
+                                height="100"
+                                width="100"
+                                class="h-10 w-10 lg:h-16 lg:w-16 invert-[95%] lg:invert-0"
+                                alt=""
+                            />
+                        </div>
+                        <!-- hero-body-text	 -->
+                        <div
+                            class="header-text flex flex-col gap-7 justify-end"
+                        >
+                            <!-- hero-body-title	 -->
+                            <h1
+                                class="text-4xl max-w-[49ch] lg:text-5xl font-medium font-latoreg lg:drop-shadow-none"
+                            >
+                                Oasis Sky Lounge
+                            </h1>
+                            <!-- hero-body-pargraph	 -->
+                            <p
+                                class="text-xl max-w-[20ch] lg:text-2xl font-lato font-extralight lg:text-lightDark drop-shadow-xl lg:drop-shadow-none"
+                            >
+                                Torontos most luxurious rooftop lounge
+                            </p>
+                            <!-- Call To Action Container	 -->
+                        </div>
+                        <!-- Call To Action Button	 -->
+                        <div class="cta relative">
+                            <a
+                                href="form.html"
+                                class="group duration-150 hover:bg-coyoteBrown uppercase get-started w-[240px] lg:w-[300px] bg-lightWheat flex"
+                            >
+                                <p
+                                    class="py-3 text-sm lg:text-lg pl-6 flex-[5] duration-150 text-coyoteBrown font-latobd group-hover:text-white"
+                                >
+                                    Make A Reservation
+                                </p>
+                                <button
+                                    class="flex-1 ml-1 px-2 duration-150 bg-lightBiege hover:bg-coyoteBrown group-hover:text-lightWheat"
+                                >
+                                    <i
+                                        class="fa fa-arrow-right group-hover:animate-spin text-white"
+                                    ></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- hero-image	 -->
+                <picture class="relative overflow-hidden z-[-1] lg:col-auto">
+                    <img
+                        class="object-cover h-full w-full scale-125 duration-300 opacity-0 object-center"
+                        src="/assets/city-3e34698f.jpg"
+                        id="hero-img"
+                        alt="city from sky view"
+                    />
+                </picture>
+            </header>
+        </div>
+        <script>
+            const heroText = document.getElementById("hero-text");
+            const heroImg = document.getElementById("hero-img");
+
+            function showHeroImg() {
+                heroText.classList.remove("opacity-0", "scale-125");
+                heroImg.classList.remove("opacity-0", "scale-125");
+            }
+
+            window.addEventListener("load", showHeroImg);
+        </script>
+    </body>
+</html>
